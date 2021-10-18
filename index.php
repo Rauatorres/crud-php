@@ -15,8 +15,11 @@
             <td>Sexo</td>
             <td>Data de Nascimento</td>
             <td>Telefone</td>
-            <td>Emails</td>
+            <td>Email</td>
         </tr>
     </table>
+    <?php
+        echo "Olá Mundo!";
+    ?>
 </body>
 </html>
