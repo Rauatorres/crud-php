@@ -7,8 +7,16 @@
     <title>Página Principal</title>
 </head>
 <body>
-    <h1>Olá Mundo!</h1>
-    <h2>Segundo commit git</h2>
-    <p>Alteração para o branch1</p>
+    <a href="#cadastrar">Cadastrar Pessoa</a>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td>Nome</td>
+            <td>Sexo</td>
+            <td>Data de Nascimento</td>
+            <td>Telefone</td>
+            <td>Emails</td>
+        </tr>
+    </table>
 </body>
 </html>
