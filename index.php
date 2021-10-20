@@ -18,8 +18,5 @@
             <td>Email</td>
         </tr>
     </table>
-    <?php
-        echo "Olá Mundo!";
-    ?>
 </body>
 </html>
