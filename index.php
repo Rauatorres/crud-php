@@ -1,3 +1,8 @@
+<?php
+    include "database.php";
+    $database = new Database();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
