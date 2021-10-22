@@ -3,31 +3,31 @@
 class Pessoa{
     private $nome;
     private $sexo;
-    private $data_nasc;
+    private $dataNasc;
     private $tel;
     private $email;
 
-    function __construct($nome, $sexo, $data_nasc, $tel, $email){
+    public function __construct($nome, $sexo, $dataNasc, $tel, $email){
         $this->nome = $nome;
         $this->sexo = $sexo;
-        $this->data_nasc = $data_nasc;
+        $this->dataNasc = $dataNasc;
         $this->tel = $tel;
         $this->email = $email;
     }
 
-    function getNome(){
+    public function getNome(){
         return $this->nome;
     }
-    function getSexo(){
+    public function getSexo(){
         return $this->sexo;
     }
-    function getDataNasc(){
-        return $this->data_nasc;
+    public function getDataNasc(){
+        return $this->dataNasc;
     }
-    function getTel(){
+    public function getTel(){
         return $this->tel;
     }
-    function getEmail(){
+    public function getEmail(){
         return $this->email;
     }
 }
