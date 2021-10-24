@@ -24,5 +24,15 @@
             <td>Email</td>
         </tr>
     </table>
+    <?php
+        $listaPessoas = $database->getPessoas();
+        foreach($listaPessoas as $pessoa){
+            echo "<tr>";
+            foreach($pessoa as $attr){
+                echo "<td>$attr</td>";
+            }
+            echo "</tr>";
+        }
+    ?>
 </body>
 </html>
