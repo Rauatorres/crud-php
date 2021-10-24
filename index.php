@@ -14,6 +14,22 @@
 </head>
 <body>
     <a href="#cadastrar">Cadastrar Pessoa</a>
+    <form action="index.php" method="get">
+        <label for="">Nome</label>
+        <input type="text" name="nome" id="">
+        <label for="">Sexo</label>
+        <label for="">M</label>
+        <input type="radio" name="sexo" id="masc">
+        <label for="">F</label>
+        <input type="radio" name="sexo" id="fem">
+        <label for="">Data de Nascimento</label>
+        <input type="date" name="dataNasc" id="">
+        <label for="">Telefone</label>
+        <input type="tel" name="tel" id="">
+        <label for="">E-mail</label>
+        <input type="email" name="email" id="">
+        <input type="submit" value="Enviar">
+    </form>
     <table>
         <tr>
             <td>Id</td>
