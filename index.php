@@ -14,14 +14,14 @@
 </head>
 <body>
     <a href="#cadastrar">Cadastrar Pessoa</a>
-    <form action="index.php" method="get">
+    <form action="request.php" method="post">
         <label for="">Nome</label>
         <input type="text" name="nome" id="">
         <label for="">Sexo</label>
         <label for="">M</label>
-        <input type="radio" name="sexo" id="masc">
+        <input type="radio" name="sexo" id="masc" value="m">
         <label for="">F</label>
-        <input type="radio" name="sexo" id="fem">
+        <input type="radio" name="sexo" id="fem" value="f">
         <label for="">Data de Nascimento</label>
         <input type="date" name="dataNasc" id="">
         <label for="">Telefone</label>
