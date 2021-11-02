@@ -6,13 +6,17 @@
         $nome = $_POST['nome'];
         $sexo = $_POST['sexo'];
         $dataNasc = $_POST['dataNasc'];
-        if (isset($_POST['tel'])){
-             $tel = $_POST['tel'];
-             echo $tel;
-        }
-        // $tel = $_POST['tel'];
-        // $email = $_POST['email'];
-        $novaPessoa = new Pessoa($nome, $sexo, $dataNasc, null, null);
+        $tel = $_POST['tel'];
+        settype($tel, "int");
+        $email = $_POST['email'];
+        echo $nome." ".gettype($nome)."<br>";
+        echo $sexo." ".gettype($sexo)."<br>";
+        echo $dataNasc." ".gettype($dataNasc)."<br>";
+        echo $tel." ".gettype($tel)."<br>";
+        echo $email." ".gettype($email)."<br>";
+        $novaPessoa = new Pessoa($nome, $sexo, $dataNasc, $tel, $email);
+        $testePessoa = new Pessoa("teste", "T", "13-05-1998", 123456, 'fdsofmpdsk');
         $database->addPessoa($novaPessoa);
     }
-    header("index.php");
+    echo "funcionando";
+    header("Location: index.php");

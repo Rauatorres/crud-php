@@ -2,6 +2,7 @@
     include "database.php";
     include "pessoa.php";
     $database = new Database();
+    // $database->addPessoa($testePessoa);
 ?>
 
 <!DOCTYPE html>
@@ -47,6 +48,7 @@
             foreach($pessoa as $attr){
                 echo "<td>$attr</td>";
             }
+            
             echo "</tr>";
         }
     ?>
