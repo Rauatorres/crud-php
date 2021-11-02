@@ -12,10 +12,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Principal</title>
+    <script src="script.js"></script>
 </head>
 <body>
     <a href="#cadastrar">Cadastrar Pessoa</a>
-    <form action="request.php" method="post">
+    <form action="request.php" method="post" id="form">
+        <p id="idtext">fdsfsfd</p>
         <label for="">Nome</label>
         <input type="text" name="nome" id="">
         <label for="">Sexo</label>
@@ -29,7 +31,8 @@
         <input type="tel" name="tel" id="">
         <label for="">E-mail</label>
         <input type="email" name="email" id="">
-        <input type="submit" value="Enviar">
+        <input type="hidden" name="action" id="action" value="cadastrar">
+        <input type="submit" value="Enviar" id="submit">
     </form>
     <table>
         <tr>
@@ -48,7 +51,11 @@
             foreach($pessoa as $attr){
                 echo "<td>$attr</td>";
             }
-            
+            $id = $pessoa["ID"];
+            echo "<div class='action'>";
+            echo "<a href='#' id='editar' onclick='editar($id)'>Editar</a>";
+            echo "<a href='#' id='excluir'>Excluir</a>";
+            echo "</div>";
             echo "</tr>";
         }
     ?>
