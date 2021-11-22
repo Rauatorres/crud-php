@@ -25,3 +25,11 @@ function editar(id){
     formtel.value = pessoatel
     formemail.value = pessoaemail
 }
+
+function excluir(id){
+	let idpessoa = document.getElementById('idpessoaDel')
+	let msg = document.getElementById('excluirMsg')
+
+	idpessoa.value = id
+	msg.innerHTML = 'Deseja mesmo excluir pessoa ' + id
+}

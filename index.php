@@ -34,6 +34,13 @@
         <input type="email" name="email" id="email">
         <input type="submit" value="Enviar" id="submit">
     </form>
+    <form action="request.php" method="post" id="excluir">
+        <input type="hidden" name="action" value="excluir" id="actionDel">
+        <input type="hidden" name="idpessoa" value="" id="idpessoaDel">
+        <p id="excluirMsg"></p>
+        <input type="button" id="cancelar" value="Cancelar">
+        <input type="submit" name="enviar" value="Ok">
+    </form>
     <table>
         <tr>
             <td>Id</td>

@@ -25,5 +25,10 @@
             $database->changePessoa($id, $novaPessoa);
         }
     }
+
+    if($action == 'excluir'){
+        $id = $_POST['idpessoa'];
+        $database->delPessoa($id);        
+    }
     
     header("Location: index.php");
