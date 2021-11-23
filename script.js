@@ -1,3 +1,21 @@
+function cadastrar(){
+	let action = document.getElementById('action')
+	let submit = document.getElementById('submit')
+
+	let formnome = document.getElementById('nome')
+    let formdataNasc = document.getElementById('dataNasc')
+    let formtel = document.getElementById('tel')
+    let formemail = document.getElementById('email')
+
+    formnome.value = ""
+    formdataNasc.value = ""
+    formtel.value = ""
+    formemail.value = ""
+
+	action.value = 'cadastrar'
+	submit.value = 'Enviar'
+}
+
 function editar(id){
 	
     let idpessoa = document.getElementById('idpessoa') 

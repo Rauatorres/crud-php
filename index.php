@@ -15,7 +15,7 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <a href="#">Cadastrar Pessoa</a>
+    <a href="#" onclick="cadastrar()">Cadastrar Pessoa</a>
     <form action="request.php" method="post" id="form">
         <input type="hidden" name="action" id="action" value="cadastrar">
         <input type="hidden" name="idpessoa" id="idpessoa" value="">

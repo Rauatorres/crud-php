@@ -7,8 +7,6 @@
     $action = $_POST['action'];
 
     if (isset($_POST['nome']) && isset($_POST['sexo']) && isset($_POST['dataNasc'])){
-        // echo isset($_POST['action']);
-        // echo $_POST['nome'];
         $nome = $_POST['nome'];
         $sexo = $_POST['sexo'];
         $dataNasc = $_POST['dataNasc'];
