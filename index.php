@@ -2,7 +2,6 @@
     include "database.php";
     include "pessoa.php";
     $database = new Database();
-    // $database->addPessoa($testePessoa);
 ?>
 
 <!DOCTYPE html>
@@ -51,12 +50,14 @@
             <td>Email</td>
         </tr>
     <?php
-        $listaPessoas = $database->getPessoas();
+        // busca todas as pessoas registradas no banco de dados junto com os seus atributos e os imprime dentro da tabela
+        $listaPessoas = $database->getPessoas(); 
         foreach($listaPessoas as $pessoa){
             $id = $pessoa["ID"];
-            echo '<tr id="'."pessoa$id".'">';
+            echo '<tr id="'."pessoa$id".'">'; // será usado na função editar() (arquivo script.js) para selecionar qual linha da tabela terá seus dados colocados nas caixas de texto do formulário quando o usuário clicar no botão editar
             foreach($pessoa as $attr){
                 $attrname = null;
+                //  este switch pega o nome do atributo (nome, sexo, datanasc, etc...) e coloca ele como classe do atributo para que a função editar() use-a para pegar o dado e jogar no campo do formulário
                 switch(array_search($attr, $pessoa)){
                     case 'NOME':
                         $attrname = 'nome'; 
@@ -76,6 +77,7 @@
                 }
                 echo "<td class='$attrname'>$attr</td>";
             }
+
             echo "<td class='action'>";
             echo "<a href='#' class='editar' onclick='editar($id)'>Editar</a>";
             echo "<a href='#' class='excluir' onclick='excluir($id)'>Excluir</a>";

@@ -1,3 +1,4 @@
+//	comportamento da página index.php caso o usuário clique em cadastrar pessoa, editar ou excluir
 function cadastrar(){
 	let action = document.getElementById('action')
 	let submit = document.getElementById('submit')
@@ -7,6 +8,7 @@ function cadastrar(){
     let formtel = document.getElementById('tel')
     let formemail = document.getElementById('email')
 
+	//	transforma todos os valores dos inputs do formulário em nada
     formnome.value = ""
     formdataNasc.value = ""
     formtel.value = ""
@@ -22,14 +24,15 @@ function editar(id){
     let action = document.getElementById('action')
     let submit = document.getElementById('submit')
 
+    //	campos de input do formulário
     let formnome = document.getElementById('nome')
     let formdataNasc = document.getElementById('dataNasc')
     let formtel = document.getElementById('tel')
     let formemail = document.getElementById('email')
 
-    let tablePessoaId = document.getElementById('pessoa' + id)
+    //	pegando o conteúdo da linha da tabela
+    let tablePessoaId = document.getElementById('pessoa' + id)	//	linha que vai ser editada
     let pessoanome = tablePessoaId.getElementsByClassName('nome')[0].innerText
-    let pessoasexo = tablePessoaId.getElementsByClassName('sexo')[0].innerText
     let pessoadataNasc = tablePessoaId.getElementsByClassName('dataNasc')[0].innerText
     let pessoatel = tablePessoaId.getElementsByClassName('tel')[0].innerText
     let pessoaemail = tablePessoaId.getElementsByClassName('email')[0].innerText
@@ -38,6 +41,7 @@ function editar(id){
     idpessoa.value = id
     submit.value = "Salvar"
 
+    //	colocando o conteúdo como valor nos campos do formulário
     formnome.value = pessoanome
     formdataNasc.value = pessoadataNasc
     formtel.value = pessoatel
