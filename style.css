@@ -1,0 +1,49 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+form, table, td, div, label{
+	/*border: black solid 1px;*/
+}
+
+#formPrincipal{
+	width: 400px;
+	padding: 20px;
+	margin: auto;
+	font-size: 14pt;
+	font-family: Arial, sans-serif;
+}
+#formExcluir{
+	width: 300px
+	margin: auto;
+}
+#formPrincipal *{
+	margin: 5px;
+}
+#formPrincipal input[type='text'], #formPrincipal input[type='date'], #formPrincipal input[type='tel'], #formPrincipal input[type='email']{
+	font-size: 12pt;
+	width: 290px;
+}
+#areaSexo{
+	margin: 10px;	
+}
+
+#formPrincipal label{
+	display: block;
+	margin-top: 17px;
+}
+#areaSexo label{
+	display: inline;
+}
+label, div{
+	width: fit-content;
+}
+#formPrincipal input[type='submit']{
+	display: block;
+	width: 370px;
+	margin: auto;
+	font-size: 13pt;
+	margin-top: 25px;
+	height: 40px;
+}
