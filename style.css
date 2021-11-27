@@ -13,6 +13,7 @@ a{
 	display: block;
 	width: fit-content;
 	font-family: Arial, sans-serif;
+	margin: 20px 50px;
 }
 
 #botaoCadastrar{
@@ -26,11 +27,12 @@ a{
 	margin: auto;
 	font-size: 14pt;
 	font-family: Arial, sans-serif;
+	display: none;
 }
 #formExcluir{
 	width: 280px;
 	height: 80px;
-	display: flex;
+	display: none;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-content: space-between;
@@ -95,5 +97,8 @@ table{
 .tabelaEditarExcluir a{
 	margin: 0px 4px;
 	padding: 2px 6px;
+}
+#botaoEditar{
+	padding: 2px 8px;  
 }
 

@@ -50,7 +50,7 @@
             <td>1990-06-18</td>
             <td>124187362</td>
             <td>teste@teste.com</td>
-            <td class="tabelaEditarExcluir"><a href="#">Editar</a><a href="#">Excluir</a></td>
+            <td class="tabelaEditarExcluir"><a href="#" id="botaoEditar">Editar</a><a href="#">Excluir</a></td>
         </tr>
     </table>
 </body>
