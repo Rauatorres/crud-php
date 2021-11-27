@@ -34,15 +34,16 @@
         <input type="button" id="excluirOkButton" name="" value="Ok">
     </form>
     <table>
-        <tr>
+        <tr id="linhaAtributosTabela">
             <td>Id</td>
             <td>Nome</td>
             <td>Sexo</td>
             <td>Data de Nascimento</td>
             <td>Telefone</td>
             <td>Email</td>
+            <td id="vazioTabela"></td>
         </tr>
-        <tr>
+        <tr class="linhaInstanciasTabela">
             <td>1</td>
             <td>Teste</td>
             <td>M</td>

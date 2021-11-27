@@ -61,4 +61,18 @@ p{
 	margin-top: 0;
 }
 
+table{
+	margin-left: 20px;
+	border-collapse: collapse;
+	font-family: Arial, sans-serif;
+}
+#linhaAtributosTabela td{
+	text-align: center;
+	font-size: 13pt;
+	padding: 5px 15px;
+}
+.linhaInstanciasTabela td{
+	font-size: 11pt;
+	padding: 4px;
+}
 
