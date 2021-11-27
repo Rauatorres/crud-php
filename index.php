@@ -31,7 +31,7 @@
     <form id="formExcluir">
         <p>Deseja mesmo excluir pessoa?</p>
         <input type="button" name="" value="Cancelar">
-        <input type="button" name="" value="Ok">
+        <input type="button" id="excluirOkButton" name="" value="Ok">
     </form>
     <table>
         <tr>

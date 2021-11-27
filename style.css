@@ -3,8 +3,8 @@ body{
 	padding: 0;
 }
 
-form, table, td, div, label{
-	/*border: black solid 1px;*/
+form, table, td, div, label, p{
+	border: black solid 1px;
 }
 
 #formPrincipal{
@@ -15,8 +15,18 @@ form, table, td, div, label{
 	font-family: Arial, sans-serif;
 }
 #formExcluir{
-	width: 300px
+	width: 280px;
+	height: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-between;
+	padding: 7px;
 	margin: auto;
+}
+#formExcluir input{
+	width: 100px;
+	height: 30px;
 }
 #formPrincipal *{
 	margin: 5px;
@@ -47,3 +57,8 @@ label, div{
 	margin-top: 25px;
 	height: 40px;
 }
+p{
+	margin-top: 0;
+}
+
+
