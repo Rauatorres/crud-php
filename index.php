@@ -9,7 +9,7 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <a href="#cadastrar">Cadastrar Pessoa</a>
+    <a href="#" id="botaoCadastrar">Cadastrar Pessoa</a>
     <form action="#" method="post" id="formPrincipal">
         <label for="nome">Nome</label>
         <input type="text" name="" id="nome">
@@ -50,7 +50,7 @@
             <td>1990-06-18</td>
             <td>124187362</td>
             <td>teste@teste.com</td>
-            <td><a href="#">Editar</a><a href="#">Excluir</a></td>
+            <td class="tabelaEditarExcluir"><a href="#">Editar</a><a href="#">Excluir</a></td>
         </tr>
     </table>
 </body>
