@@ -9,7 +9,7 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <a href="#" id="botaoCadastrar">Cadastrar Pessoa</a>
+    <a href="#" id="botaoCadastrar" onclick="cadastrar()">Cadastrar Pessoa</a>
     <form action="#" method="post" id="formPrincipal">
         <label for="nome">Nome</label>
         <input type="text" name="" id="nome">
@@ -30,8 +30,8 @@
     </form>
     <form id="formExcluir">
         <p>Deseja mesmo excluir pessoa?</p>
-        <input type="button" name="" value="Cancelar">
-        <input type="button" id="excluirOkButton" name="" value="Ok">
+        <input type="button" name="" value="Cancelar" onclick="fecharExcluir()">
+        <input type="button" id="excluirOkButton" name="" value="Ok" onclick="fecharExcluir()">
     </form>
     <table>
         <tr id="linhaAtributosTabela">
@@ -50,7 +50,7 @@
             <td>1990-06-18</td>
             <td>124187362</td>
             <td>teste@teste.com</td>
-            <td class="tabelaEditarExcluir"><a href="#" id="botaoEditar">Editar</a><a href="#">Excluir</a></td>
+            <td class="tabelaEditarExcluir"><a href="#" id="botaoEditar" onclick="cadastrar()">Editar</a><a href="#" onclick="excluir()">Excluir</a></td>
         </tr>
     </table>
 </body>
