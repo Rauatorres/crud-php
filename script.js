@@ -1,19 +1,22 @@
-function cadastrar(){
-	let form = document.getElementById('formPrincipal')
-	if (form.style.display == 'block'){
+var janelaAberta = false
+
+function abrirJanela(id, display){
+	let form = document.getElementById(id)
+	let fora = document.getElementById('divCliqueFora')
+	if (form.style.display == display){
 		form.style.display = 'none'
 	}else{
-		form.style.display = 'block'
+		form.style.display = display
 	}
+	fora.style.display = 'block'
+	janelaAberta = true
 }
-function excluir(){
-	let form = document.getElementById('formExcluir')
-	if (form.style.display == 'flex'){
-		form.style.display = 'none'
-	}else{
-		form.style.display = 'flex'
+
+function fecharJanelas(){
+	if (janelaAberta){
+		document.getElementById('formPrincipal').style.display = 'none'
+		document.getElementById('formExcluir').style.display = 'none'
+		document.getElementById('divCliqueFora').style.display = 'none'
+		janelaAberta = false
 	}
-}
-function fecharExcluir(){
-	document.getElementById('formExcluir').style.display = 'none'
 }
