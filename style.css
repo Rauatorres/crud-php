@@ -3,9 +3,10 @@ html, body{
 	padding: 0;
 }
 
-form, table, td, div, label, p, a{
-	border: black solid 1px;
+form, table, th, td, div, label, p, a{
+	/*border: black solid 1px;*/
 }
+
 
 a{
 	text-decoration: none;
@@ -20,6 +21,8 @@ a{
 	font-size: 14pt;
 	padding: 7px 14px;
 	border-radius: 5px;
+	background-color: #399EE6;
+	color: white;
 }
 
 #formPrincipal{
@@ -37,19 +40,25 @@ a{
 #fecharCadastrar{
 	float: right;
 }
+#fecharCadastrar span{
+	font-size: 25pt;
+}
 #formExcluir{
-	width: 280px;
-	height: 80px;
+	width: 320px;
+	height: 120px;
 	display: none;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	align-content: space-between;
+	align-content: center;
 	padding: 7px;
 	position: absolute;
 	z-index: 1;
 	background-color: white;
 	left: 50%;
 	transform: translate(-50%, 0);
+}
+#formExcluir *{
+	margin: 20px;
 }
 #formExcluir input{
 	width: 100px;
@@ -64,11 +73,13 @@ a{
 }
 #areaSexo{
 	margin: 10px;	
+	width: fit-content;
 }
 
-#formPrincipal label{
+#formPrincipal label, span{
 	display: block;
 	margin-top: 17px;
+	color: rgb(0, 150, 255);
 }
 #areaSexo label{
 	display: inline;
@@ -78,11 +89,14 @@ label, div{
 }
 #formPrincipal input[type='submit']{
 	display: block;
-	width: 370px;
+	width: 430px;
 	margin: auto;
 	font-size: 13pt;
 	margin-top: 25px;
 	height: 40px;
+	background-color: rgb(0, 140, 235);
+	border: none;
+	color: white;
 }
 p{
 	margin-top: 0;
@@ -93,12 +107,14 @@ table{
 	border-collapse: collapse;
 	font-family: Arial, sans-serif;
 }
-#linhaAtributosTabela td{
+th{
 	text-align: center;
 	font-size: 13pt;
 	padding: 5px 15px;
+	background-color: rgb(18, 72, 204);
+	color: white;
 }
-.linhaInstanciasTabela td{
+td{
 	font-size: 11pt;
 	padding: 4px;
 }
