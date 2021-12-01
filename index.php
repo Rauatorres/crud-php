@@ -53,7 +53,7 @@
             <td>1990-06-18</td>
             <td>124187362</td>
             <td>teste@teste.com</td>
-            <td class="tabelaEditarExcluir"><a href="#" id="botaoEditar" onclick="abrirJanela('formPrincipal', 'block')">Editar</a><a href="#" onclick="abrirJanela('formExcluir', 'flex')">Excluir</a></td>
+            <td class="tabelaEditarExcluir"><a href="#" class="botaoEditar" onclick="abrirJanela('formPrincipal', 'block')">Editar</a><a href="#" onclick="abrirJanela('formExcluir', 'flex')" class="botaoExcluir">Excluir</a></td>
         </tr>
         <tr class="linhaInstanciasTabela">
             <td>1</td>
@@ -62,7 +62,7 @@
             <td>1990-06-18</td>
             <td>124187362</td>
             <td>teste@teste.com</td>
-            <td class="tabelaEditarExcluir"><a href="#" id="botaoEditar" onclick="abrirJanela('formPrincipal', 'block')">Editar</a><a href="#" onclick="abrirJanela('formExcluir', 'flex')">Excluir</a></td>
+            <td class="tabelaEditarExcluir"><a href="#" class="botaoEditar" onclick="abrirJanela('formPrincipal', 'block')">Editar</a><a href="#" onclick="abrirJanela('formExcluir', 'flex')" class="botaoExcluir">Excluir</a></td>
         </tr>
         <tr class="linhaInstanciasTabela">
             <td>1</td>
@@ -71,7 +71,7 @@
             <td>1990-06-18</td>
             <td>124187362</td>
             <td>teste@teste.com</td>
-            <td class="tabelaEditarExcluir"><a href="#" id="botaoEditar" onclick="abrirJanela('formPrincipal', 'block')">Editar</a><a href="#" onclick="abrirJanela('formExcluir', 'flex')">Excluir</a></td>
+            <td class="tabelaEditarExcluir"><a href="#" class="botaoEditar" onclick="abrirJanela('formPrincipal', 'block')">Editar</a><a href="#" onclick="abrirJanela('formExcluir', 'flex')" class="botaoExcluir">Excluir</a></td>
         </tr>
         <tr class="linhaInstanciasTabela">
             <td>1</td>
@@ -80,7 +80,7 @@
             <td>1990-06-18</td>
             <td>124187362</td>
             <td>teste@teste.com</td>
-            <td class="tabelaEditarExcluir"><a href="#" id="botaoEditar" onclick="abrirJanela('formPrincipal', 'block')">Editar</a><a href="#" onclick="abrirJanela('formExcluir', 'flex')">Excluir</a></td>
+            <td class="tabelaEditarExcluir"><a href="#" class="botaoEditar" onclick="abrirJanela('formPrincipal', 'block')">Editar</a><a href="#" onclick="abrirJanela('formExcluir', 'flex')" class="botaoExcluir">Excluir</a></td>
         </tr>
         <tr class="linhaInstanciasTabela">
             <td>1</td>
@@ -89,7 +89,7 @@
             <td>1990-06-18</td>
             <td>124187362</td>
             <td>teste@teste.com</td>
-            <td class="tabelaEditarExcluir"><a href="#" id="botaoEditar" onclick="abrirJanela('formPrincipal', 'block')">Editar</a><a href="#" onclick="abrirJanela('formExcluir', 'flex')">Excluir</a></td>
+            <td class="tabelaEditarExcluir"><a href="#" class="botaoEditar" onclick="abrirJanela('formPrincipal', 'block')">Editar</a><a href="#" onclick="abrirJanela('formExcluir', 'flex')" class="botaoExcluir">Excluir</a></td>
         </tr>
         <script type="text/javascript">
             var cor = "gainsboro"
