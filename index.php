@@ -49,8 +49,6 @@
             <td>Telefone</td>
             <td>Email</td>
         </tr>
-<<<<<<< HEAD
-=======
     <?php
         // busca todas as pessoas registradas no banco de dados junto com os seus atributos e os imprime dentro da tabela
         $listaPessoas = $database->getPessoas(); 
@@ -87,7 +85,6 @@
             echo "</tr>";
         }
     ?>
->>>>>>> server
     </table>
 </body>
 </html>
