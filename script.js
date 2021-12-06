@@ -1,12 +1,25 @@
-//	comportamento da página index.php caso o usuário clique em cadastrar pessoa, editar ou excluir
-function cadastrar(){
-	let action = document.getElementById('action')
-	let submit = document.getElementById('submit')
 
-	let formnome = document.getElementById('nome')
-    let formdataNasc = document.getElementById('dataNasc')
-    let formtel = document.getElementById('tel')
-    let formemail = document.getElementById('email')
+var janelaAberta = false
+
+//	comportamento da página index.php caso o usuário clique em cadastrar pessoa, editar ou excluir
+function abrirJanela(id, display){
+
+	let form = document.getElementById(id)
+	let fora = document.getElementById('divCliqueFora')
+
+	if (form.style.display == display){
+		form.style.display = 'none'
+	}else{
+		form.style.display = display
+	}
+	fora.style.display = 'block'
+	janelaAberta = true
+}
+
+function cadastrar(){
+
+
+	abrirJanela("form", "block")
 
 	//	transforma todos os valores dos inputs do formulário em nada
     formnome.value = ""
@@ -14,21 +27,12 @@ function cadastrar(){
     formtel.value = ""
     formemail.value = ""
 
-	action.value = 'cadastrar'
 	submit.value = 'Enviar'
+	action.value = 'cadastrar'
 }
 
 function editar(id){
-	
-    let idpessoa = document.getElementById('idpessoa') 
-    let action = document.getElementById('action')
-    let submit = document.getElementById('submit')
-
-    //	campos de input do formulário
-    let formnome = document.getElementById('nome')
-    let formdataNasc = document.getElementById('dataNasc')
-    let formtel = document.getElementById('tel')
-    let formemail = document.getElementById('email')
+    abrirJanela("form", "block")
 
     //	pegando o conteúdo da linha da tabela
     let tablePessoaId = document.getElementById('pessoa' + id)	//	linha que vai ser editada
@@ -46,12 +50,24 @@ function editar(id){
     formdataNasc.value = pessoadataNasc
     formtel.value = pessoatel
     formemail.value = pessoaemail
+
 }
 
 function excluir(id){
-	let idpessoa = document.getElementById('idpessoaDel')
+	abrirJanela('excluir', 'block')
+
+	idpessoa = document.getElementById('idpessoaDel')
 	let msg = document.getElementById('excluirMsg')
 
 	idpessoa.value = id
-	msg.innerHTML = 'Deseja mesmo excluir pessoa ' + id
+	msg.innerHTML = 'Deseja mesmo excluir pessoa ' + id + '?'
+}
+
+function fecharJanelas(){
+	if (janelaAberta){
+		document.getElementById('form').style.display = 'none'
+		document.getElementById('excluir').style.display = 'none'
+		document.getElementById('divCliqueFora').style.display = 'none'
+		janelaAberta = false
+	}
 }
